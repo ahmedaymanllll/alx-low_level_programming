@@ -5,7 +5,7 @@
 /**
  * main - entry point
  *
- * Descreption: true or false validation
+ * Descreption: false or true validation
  *
  * Return: 0 (success)
 */
