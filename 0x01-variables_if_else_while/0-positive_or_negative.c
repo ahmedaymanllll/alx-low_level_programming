@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Enrty point
+ * main - enrty point
  *
  * Descreption: false or true validation
  *
