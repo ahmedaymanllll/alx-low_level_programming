@@ -1,8 +1,6 @@
 #include"main.h"
 
 /**
- * main - Entry point
- *
  * Description: how to Write a function that prints the alphabet,
  *		in lowercase, followed by a new line.
  *
