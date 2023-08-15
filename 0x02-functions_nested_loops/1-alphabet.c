@@ -3,19 +3,19 @@
 /**
  * main - Entry point
  *
- * Description: 
+ * Description: how to Write a function that prints the alphabet,
+ *		in lowercase, followed by a new line.
  *
  * Return: 0 (success)
 */
 
 int main(void)
 {
-	char str[] = {a..z};
 	int ch;
 
 	for (ch = 0; ch < 25; ch++)
-		a..z (str[ch]);
-	a..z('\n')
+		_putchar(ch);
+	_putchar('\n');
 
 	return (0);
 }
