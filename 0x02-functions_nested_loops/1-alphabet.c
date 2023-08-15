@@ -12,6 +12,4 @@ int main(void)
 	for (ch = 0; ch < 25; ch++)
 		_putchar(ch);
 	_putchar('\n');
-
-	return (0);
 }
