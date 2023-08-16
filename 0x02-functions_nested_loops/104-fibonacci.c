@@ -20,7 +20,7 @@ int numLength(int num)
 		length += 1;
 	}
 	return (length);
-
+}
 /**
  * main - Entry point
  *
