@@ -12,7 +12,7 @@ void print_time_table(int n)
 
 	if (n <= 15 && n >= 0)
 	{
-		for (num = 0; num <= n; ++nu)
+		for (num = 0; num <= n; ++num)
 		{
 			_putchar(48);
 			for (mult = 1; mult <= n ; ++mult)
@@ -27,7 +27,7 @@ void print_time_table(int n)
 				if (prod <= 99)
 					_putchar(' ');
 
-				if (proud >= 100)
+				if (prod >= 100)
 				{
 					_putchar((prod / 100) + 48);
 					_putchar((prod / 10) % 10 + 48);
