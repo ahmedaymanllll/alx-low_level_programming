@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_tie_table - print time table of n
+ * print_times_table - print time table of n
  *
  * @n: takes number input
 */
 
-void print_time_table(int n)
+void print_times_table(int n)
 {
 	int prod, mult, num;
 
