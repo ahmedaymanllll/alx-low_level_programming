@@ -2,7 +2,7 @@
 
 /**
  * more_numbers - print {0..14} in 10 times the numbers
- * followed by a new line.
+ * followed by a new line _putchar three times.
  *
  * Return: 0 success
 */
