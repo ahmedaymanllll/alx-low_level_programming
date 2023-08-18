@@ -11,20 +11,17 @@ void print_diagonal(int n)
 	int spaces, i;
 
 	if (n <= 0)
-	{
 		_putchar('\n');
-	}
 	else
 	{
-
-		for (spaces = 0; spaces < n; spaces++)
+		for (spaces = 1; spaces <= n; spaces++)
 		{
 
-			for (i = 0; i < spaces; i++)
+			for (i = 1; i <= spaces; i++)
 			{
 				_putchar(' ');
 			}
-			_putchar('\');
+			_putchar(92); /*is equal to '/' char*/
 			_putchar('\n');
 		}
 	}
