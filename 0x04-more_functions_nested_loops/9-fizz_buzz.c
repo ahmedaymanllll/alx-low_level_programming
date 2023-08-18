@@ -19,7 +19,7 @@ int main(void)
 		if (num % 3 == 0 && !(num % 5 == 0))
 			print("Fizz");
 		else if (num % 5 == 0 && !(num % 3 == 0))
-			print("Bizz");
+			print("Buzz");
 		else if (num % 3 == 0 && num % 5 == 0)
 			print("FizzBuzz");
 		else
