@@ -18,11 +18,10 @@ void print_diagonal(int n)
 
 	for (spaces = 1; spaces <= n; spaces++)
 	{
-		// Print spaces before the backslash
 		for (int i = 1; i < spaces; i++)
 		_putchar(' ');
 
-		_putchar('\\'); // Print backslash
+		_putchar('\\'); /*is equal to '/' char*/
 		_putchar('\n');
 	}
 }
