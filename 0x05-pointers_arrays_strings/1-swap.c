@@ -1,9 +1,9 @@
-#incude "main.h"
+#include "main.h"
 
 /**
  * swap_int - Write a function that swaps the values of two integers.
  *
- * @a: frist inte to swap
+ * @a: frist int to swap
  * @b: second int to swap
 */
 
