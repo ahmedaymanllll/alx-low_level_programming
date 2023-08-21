@@ -4,6 +4,8 @@
  * _atoi - Write a function that convert a string to an integer.
  *
  * @s: string input
+ *
+ * Return: (a * b)
 */
 
 int _atoi(char *s)
