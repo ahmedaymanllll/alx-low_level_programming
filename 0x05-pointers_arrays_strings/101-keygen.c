@@ -21,6 +21,6 @@ int main(void)
 		i += x;
 		pitchar(x);
 	}
-	pitchar(2772 - i);
+	putchar(2772 - i);
 	return (0);
 }
