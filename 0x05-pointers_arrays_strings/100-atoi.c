@@ -6,7 +6,7 @@
  * @s: string input
 */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	unsigned int a = 0;
 	int b = 1;
