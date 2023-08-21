@@ -11,17 +11,17 @@
 
 int main(void)
 {
-	int i;
-	int x;
+	int sum;
+	int c;
 
 	srand(time(NULL));
-	while (i <= 2645)
+	while (sum <= 2645)
 	{
-		x = rand() % 128;
-		i += x;
-		pitchar(x);
+		c = rand() % 128;
+		sum += c;
+		pitchar(c);
 	}
-	putchar(2772 - i);
+	putchar(2772 - sum);
 
 	return (0);
 }
