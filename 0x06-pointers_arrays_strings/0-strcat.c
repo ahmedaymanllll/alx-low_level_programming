@@ -3,10 +3,10 @@
 /**
  * *_strcat - Write a function that concatenates two strings.
  *
- * @dest: pointer to the resulting string dest
- * @src: pointer to the resulting string dest
+ * @dest: 1 input
+ * @src: 2 input
  *
- * Return: always dest
+ * Return: void
 */
 
 char *_strcat(char *dest, char *src)
@@ -15,7 +15,6 @@ char *_strcat(char *dest, char *src)
 	int i2;
 
 	i = 0;
-
 	while (dest[i] != '\0')
 	{
 		i++;
@@ -27,6 +26,6 @@ char *_strcat(char *dest, char *src)
 		i2++;
 	}
 
-		dest[i] = '\0';
+	dest[i] = '\0';
 	return (dest);
 }
