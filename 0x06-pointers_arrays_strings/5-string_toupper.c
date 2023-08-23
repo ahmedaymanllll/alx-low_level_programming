@@ -5,6 +5,7 @@
  * lowercase letters of a string to uppercase.
  *
  * @n: input
+ * Return: n
 */
 
 char *string_toupper(char *n)
