@@ -1,12 +1,9 @@
 #include <stdio.h>
-/**
- * main - Entry point a program
- * Description: A dream doesn't become reality through magic
- * Return: zero
-*/
 int main(void)
 {
-	int n, a[5], *p;
+	int n
+	int a[5];
+	int *p;
 
 	a[2] = 1024;
 	p = &n;
