@@ -12,7 +12,8 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int a, int b;
+	int a;
+	int b;
 
 	a = 0;
 	if (dest[a] != '\0')
