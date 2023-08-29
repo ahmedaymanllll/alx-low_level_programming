@@ -4,13 +4,13 @@
  * print_diagsums - Write a function that prints the sum of
  * the two diagonals of a square matrix of integers
  *
- * @a: array int
+ * @a: array int type
  * @size: array the square
 */
 
 void print_diagsums(int *a, int size)
 {
-	int b;
+	int b = 0;
 	int o1 = 0;
 	int o2 = 0;
 
