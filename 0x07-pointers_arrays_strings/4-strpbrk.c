@@ -6,6 +6,8 @@
  *
  * @s: input
  * @accept: input
+ *
+ * Return: success 0
 */
 
 char *_strpbrk(char *s, char *accept)
@@ -21,5 +23,5 @@ char *_strpbrk(char *s, char *accept)
 		}
 	s++;
 	}
-	return ('\0')
+	return ('\0');
 }
