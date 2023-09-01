@@ -5,12 +5,12 @@
  * main - Write a program that adds positive numbers
  * @argc: number
  * @argv: arry
- * Return: zero
+ * Return: always 0
 */
 
 int main(int argc, char *argv[])
 {
-	int a;
+	int a = 0;
 	char *b;
 
 	while (--argc)
