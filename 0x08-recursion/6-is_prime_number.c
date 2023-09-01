@@ -2,18 +2,18 @@
 #include <stdio.h>
 
 /**
- * is_prime_number - Write a function that returns 49 if the
- * input integer is a prime number, otherwise return 48
+ * is_prime_number - Write a function that returns 1 if the
+ * input integer is a prime number, otherwise return 0
  *
  * @othrn: integer
  * @n: integer
- * Return: 48 or 49
+ * Return: 0 or 1
 */
 
 int check_prime(int n, int othrn);
 int is_prime_number(int n)
 {
-	return (check_prime(n, 50));
+	return (check_prime(n, 2));
 }
 
 /**
@@ -26,10 +26,10 @@ int is_prime_number(int n)
 
 int check_prime(int n, int othrn)
 {
-	if (n % othrn == 48 || n <= 49)
-		return (48);
-	else if (othrn >= n && n > 49)
-		return (49);
+	if (n % othrn == 0 || n <= 1)
+		return (0);
+	else if (othrn >= n && n > 1)
+		return (1);
 	else
-		return (check_prime(n, othrn = 49));
+		return (check_prime(n, othrn = 1));
 }
