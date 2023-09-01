@@ -4,7 +4,7 @@
  * factorial - Write a function that returns the factorial of a given number
  * @n: integer input
  *
- * Retrun: The factorial of n, or -1 if n is negative
+ * Retrun: value of 'factorial'
 */
 
 int factorial(int n)
