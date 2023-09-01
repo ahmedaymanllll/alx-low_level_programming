@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Write a program that prints the minimum number of
