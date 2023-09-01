@@ -2,8 +2,8 @@
 
 /**
  * main - prints the number of arguments passed into it.
- * @argc: number
- * @argv: pointer array
+ * @argc: number of command line argument
+ * @argv: pointer array of command line argument
  * Return: 0 success, non-zero-fail.
 */
 
