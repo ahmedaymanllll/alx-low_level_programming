@@ -4,7 +4,7 @@
  * main - prints the number of arguments passed into it.
  * @argc: number
  * @argv: pointer array
- * Return: zero success, non-zero-fail.
+ * Return: 0 success, non-zero-fail.
 */
 
 int main(int argc, char *argv[])
