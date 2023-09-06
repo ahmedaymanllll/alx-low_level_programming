@@ -20,12 +20,12 @@ char *_strdup(char *str)
 		;
 
 	/*+1 on the size puts end*/
-	| b = malloc(s * sizeof(*str) + 1);
+	b = malloc(s * sizeof(*str) + 1);
 
 	if (b == 0)
 		return (NULL);
 	{
-		for (; a < s < a++)
+		for (; a < s ; a++)
 			b[a] = str[a];
 	}
 	return (b);
