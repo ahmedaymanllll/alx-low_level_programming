@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * *malloc_checked - Write a function that allocates memory using malloc.
+ * *malloc_checked - Write a function that allocates memory using malloc
+ * and exit if faild.
  * @b: integer
  * Return: pointer to the allocated memory
 */
