@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		if (s1 == NULL)
 			s1 = "";
 
-		/*comput the length of the strings*/
+		/*compute the length of the strings*/
 
 		for (x1 = 0; s1[x1] != '\0'; x1++)
 			;
@@ -34,10 +34,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		{
 			return (NULL);
 		}
-		/*copy frist string*/
+		/*copy frist string inti a.*/
 		for (b = 0; s1[b] != '\0'; b++)
 			a[b] = s1[b];
-		/*copy second string*/
+		/*copy second stringg into a.*/
 		for (c = 0; c < n; c++)
 		{
 			a[b] = s2[c];
