@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -17,17 +18,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int b, c, x1, x2;
 
 		/*check if the string passed are null*/
-		if (s2 == NULL)
-			s2 = "";
 		if (s1 == NULL)
 			s1 = "";
+		if (s2 == NULL)
+			s2 = "";
 
 		/*compute the length of the strings*/
 
 		for (x1 = 0; s1[x1] != '\0'; x1++)
-			;
+
 		for (x2 = 0; s2[x2] != '\0'; x2++)
-			;
+
 		/*Memory reservation-for case 1 & 2.*/
 		a = malloc(x1 + n + 1);
 		if (a == NULL)
