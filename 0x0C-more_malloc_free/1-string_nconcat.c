@@ -6,7 +6,7 @@
  * string_nconcat - Write a function that concatenates two strings.
  * @s1: frist the pointer string.
  * @s2: second rhe pinter string.
- * @n: number of bytes concatenate
+ * @n: number of bytes from n2 to concatenate
  *
  * Return:  pointer shall point to a newly allocated
  * space in memory,concatenate , concatenate string.
