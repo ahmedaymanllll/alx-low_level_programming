@@ -14,7 +14,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
-	unsigned int b, c, x1, x2
+	unsigned int b, c, x1, x2;
 
 		/*check if the string passed are null*/
 		if (s2 == NULL)
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (x2 = 0; s2[x2] != '\0'; x2++)
 			;
 		/*Memory reservation-for case 1 & 2.*/
-			a = malloc(x1 + n + 1);
+		a = malloc(x1 + n + 1);
 		if (a == NULL)
 		{
 			return (NULL);
