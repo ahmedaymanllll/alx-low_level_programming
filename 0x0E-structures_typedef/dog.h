@@ -7,14 +7,16 @@
  * @age: dog's age
  * @owner: owner's name
  *
- * Description: long struct in a kitty world
+ * Description: long struct in big kitty world
 */
 
 struct dog
 {
 	char *name;
-	float *age;
+	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
