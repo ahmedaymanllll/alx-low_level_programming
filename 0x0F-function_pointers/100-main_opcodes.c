@@ -6,24 +6,24 @@
 
 /**
  * main - check the code
- * @argc: number of args
- * @argv: argument vector
+ * @c: number of args
+ * @v: argument vector
  *
  * Return: Always 0
 */
 
-int main(int argc, char **argv)
+int main(int c, char **v)
 {
-	char *p = (char *)main;
+	char *a = (char *)main;
 	int b;
 
-	if (argc != 2)
+	if (c != 2)
 		printf("Error\n"), exit(1);
 	b = atoi(v[1]);
 	if (b < 0)
 		printf("Error\n"), exit(2);
 
 	while (b--)
-		printf("%02hhx%s", *p++, b ? " " : "\n");
+		printf("%02hhx%s", *a++, b ? " " : "\n");
 	return (0);
 }
