@@ -2,41 +2,41 @@
 
 /**
  * format_char - formats character
- * @sepetcator: string sepector
+ * @separator: string separator
  * @ap: argument pointer
 */
 
-void format_char(char *sepetcator, va_list ap)
+void print_char(const char *separator, va_list ap)
 {
-	printf("%s%c", sepetcator, va_arg(ap, int));
+	printf("%s%c", separator, va_arg(ap, int));
 }
 
 /**
  * format_line - format integer
- * @sepetcator: string sepector
+ * @separator: string separator
  * @ap: argument pointer
 */
-void format_int(char *sepetcator, va_list ap)
+void print_int(const char *separator, va_list ap)
 {
-	printf("%s%d", sepetcator, va_arg(ap, int));
+	printf("%s%d", separator, va_arg(ap, int));
 }
 
 /**
  * format_float - formats float
- * @sepetcator: string sepector
+ * @separator: string separator
  * @ap: argument pointer
 */
-void format_float(char *sepetcator, va_list ap)
+void print_float(const char *separator, va_list ap)
 {
-	printf("%s%f", sepetcator, va_arg(ap, double));
+	printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
  * format_string - format string
- * @sepetcator: string sepector
+ * @separator: string separator
  * @ap: argument pointer
 */
-void format_string(char *sepetcator, va_list ap)
+void print_string(const char *separator, va_list ap)
 {
 	char *str = va_arg(ap, char *);
 
@@ -44,7 +44,7 @@ void format_string(char *sepetcator, va_list ap)
 	case 1:
 		str = "(nil)";
 
-		printf("%s%s", sepetcator, str);
+		printf("%s%s", separator, str);
 }
 
 /**
@@ -54,25 +54,25 @@ void format_string(char *sepetcator, va_list ap)
 
 void print_all(const char * const format, ...)
 {
-	| int i = 0, j;
+	int i = 0, j;
 	char *separator = "";
 	va_list ap;
-	token_t tokens[] = {
-		{"c", format_char},
-		{"i", format_int},
-		{"f", format_float},
-		{"s", format_string},
-		{NULL, NULL}
+	print_function_t tokens[] = {
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
+		{0, NULL}
 	};
 	va_start(ap, format);
-	| while (format && format[i])
+	while (format && format[i])
 	{
 		j = 0;
-		while (tokens[j].token)
+		while (tokens[j].format)
 		{
-			if (format[i] == tokens[j].token[0])
+			if (format[i] == tokens[j].format)
 			{
-				tokens[j].f(separator, ap);
+				tokens[j].printer(separator, ap);
 				separator = ", ";
 			}
 			j++;
