@@ -3,51 +3,55 @@
 
 /**
  * _strlen - Write a function that creates a new dog.
- * @s: the string to length
+ * @str: the string to length
  *
- * Return: length of @s
+ * Return: length of @str
 */
 
-int _strlen(const char *s)
+int _strlen(const char *str)
 {
 	int l = 0;
 
-	while (*s++)
+	while (*str++)
 		l++;
 	return (l);
 }
 
 /**
- * _strcopy - a function that returns @d with copy str @s
+ * _strcopy - a function that returns @dest with copy string @src
  *
- * @s: string copy
- * @d: copy string here
+ * @src: string copy
+ * @dest: copy string here
+ *
+ * Return: @dest
 */
 
-char *_strcopy(char *d, char *s)
+char *_strcopy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; s[i]; i++)
-		d[i] = '\0';
+	for (i = 0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
 
-	return (d);
+	return (dest);
 }
 
 /**
  * new_dog - function that creates a new dog
  *
- * @n: nameof dog
- * @a: age of dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: dog owner
  *
- * Return: pointer dog  NULL if the function fails
+ * Return: struct pointer dog  NULL if the function fails
 */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 
-	/* if n and o are empty and a is less than zero return the null*/
+	/* if name and owner are empty and age is less than zero return the null*/
 
 	if (!name || age < 0 || !owner)
 		return (NULL);
