@@ -10,11 +10,11 @@
 
 int _strlen(const char *str)
 {
-	int l = 0;
+	int length = 0;
 
 	while (*str++)
-		l++;
-	return (l);
+		length++;
+	return (length);
 }
 
 /**
