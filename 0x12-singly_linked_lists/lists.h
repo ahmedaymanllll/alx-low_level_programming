@@ -13,7 +13,7 @@
  * Description: All prototypes used in the singly linked directory
  * are contained here and is part of the necessities for succesfull
  * program compilation.
-*/
+ */
 typedef struct list_s
 {
 	char *str;
